@@ -1,0 +1,114 @@
+html,
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 144px 1fr;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+
+  /* Background image */
+  background-image: url("../assets/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+aside {
+  filter: drop-shadow(0 0 12.5px rgba(219, 219, 219, 0.5));
+  background-color: white;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+}
+
+button {
+  width: 215px;
+  height: 54px;
+  margin-top: 30px;
+
+  border: none;
+  border-radius: 27px;
+
+  color: white;
+  background-color: #0023ff;
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+h1#olios-title,
+h2#olios-subtitle {
+  position: relative;
+  margin: 0;
+
+  color: black;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h1#olios-title {
+  font-size: 220px;
+  letter-spacing: 6px;
+}
+h2#olios-subtitle {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+span#newest {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #e7e7e7;
+  text-align: center;
+  font-size: 300px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+img#logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+nav ul li {
+  margin-bottom: 75px;
+}
+nav ul li:last-child {
+  position: absolute;
+  bottom: 0;
+}
+nav ul li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
